@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>Creating a canvas dynamically with Javascript</title>
+    <style type="text/css">
+
+        body {
+            background-color: #000000;
+            margin: 0;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+
+    // screen size
+    var SCREEN_WIDTH = window.innerWidth,
+    SCREEN_HEIGHT = window.innerHeight,
+
+    // canvas element and 2D context
+    canvas = document.createElement('canvas'),
+    context = canvas.getContext('2d');
+
+    // set up canvas
+    document.body.appendChild(canvas);
+    canvas.width = SCREEN_WIDTH;
+    canvas.height = SCREEN_HEIGHT;
+
+    </script>
+</body>
+</html>

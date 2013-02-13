@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>Embedding a canvas in HTML</title>
+    <style type="text/css">
+
+        body {
+            background-color: #000000;
+            margin: 0;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas">Sorry. Your browser does not support the HTML5 canvas element.</canvas>
+
+    <script>
+
+    // screen size
+    var SCREEN_WIDTH = window.innerWidth,
+    SCREEN_HEIGHT = window.innerHeight,
+
+    // canvas element and 2D context
+    canvas = document.getElementById('canvas'),
+    context = canvas.getContext('2d');
+
+    // set up canvas
+    document.body.appendChild(canvas);
+    canvas.width = SCREEN_WIDTH;
+    canvas.height = SCREEN_HEIGHT;
+
+    </script>
+</body>
+</html>
